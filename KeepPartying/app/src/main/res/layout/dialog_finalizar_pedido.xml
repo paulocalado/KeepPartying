@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precisamos de só mais algumas informações para continuar"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/edtReferenciaDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ponto de Referência"
+        android:layout_below="@+id/edtNumeroDialog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnFinalizarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Finalizar Pedido"
+        android:layout_below="@+id/edtReferenciaDialog"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edtNumeroDialog"
+        android:hint="Numero para contato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/edtReferenciaDialog"
+        android:layout_alignStart="@+id/edtReferenciaDialog"
+        android:layout_marginTop="47dp" />
+
+
+</RelativeLayout>
