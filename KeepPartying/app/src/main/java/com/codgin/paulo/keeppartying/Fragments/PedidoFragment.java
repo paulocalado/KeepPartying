@@ -119,6 +119,10 @@ public class PedidoFragment extends Fragment implements GoogleApiClient.Connecti
                     produto = postSnapshot.getValue(Produto.class);
                     double totalProduto = produto.getPreco()*produto.getQuantidade();
                     totalPedido+=totalProduto;
+                    /*
+                    * testando para dar o commit dessa porra
+                    *
+                    * */
                     produto.setTotalPorProduto(totalProduto);
                     listaProduto.add(produto);
                 }
